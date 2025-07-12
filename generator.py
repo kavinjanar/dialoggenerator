@@ -6,7 +6,6 @@ from langchain_core.prompts import PromptTemplate
 # Load environment variables from .env file FIRST
 
 # Set the API key - you should put this in your .env file instead of hardcoding
-os.environ['GOOGLE_API_KEY'] = "AIzaSyDUE5Ppp7dueqlFUyaaWCqmiDcy51HNuPY"
 
 # Initialize Google's Gemini model AFTER setting the API key
 gemini_model = ChatGoogleGenerativeAI(model="gemini-1.5-flash-latest")
