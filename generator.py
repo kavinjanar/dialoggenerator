@@ -1,11 +1,9 @@
 import os
-import dotenv
 import streamlit as st
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import PromptTemplate
 
 # Load environment variables from .env file FIRST
-dotenv.load_dotenv()
 
 # Set the API key - you should put this in your .env file instead of hardcoding
 os.environ['GOOGLE_API_KEY'] = "AIzaSyDUE5Ppp7dueqlFUyaaWCqmiDcy51HNuPY"
